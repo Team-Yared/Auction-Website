@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/sercices2.css">
+    <link rel="stylesheet" href="../CSS/home.css" />
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link
+       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
+       rel="stylesheet"
+     />
+     <link rel="stylesheet" href="../CSS/sellItems.css" />
+     <!-- <link rel="stylesheet" href="../CSS/services.css" /> -->
+     <link rel="stylesheet" href="../CSS/trustedCompanys.css" />
+     <link
+      rel="stylesheet"
+      href="https://fontawesome.com/icons/telegram?f=brands&s=solid"
+    />
+    <link href="../CSS/footer.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  </head>
+  <script src="../JavaScript/script.js" defer></script>
+  <body>
+    <!--Home screen-->
+
+    <Section>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <a  class="company-name" onclick="removeAnchorFormURL()" href="#sec-2">GOLDEN AUCTION</a>
+          <div class="navbar-links">
+            <a href="#footer-id" class="navbar-link">Contact us</a>
+            <a href="#service-id" class="navbar-link">About us</a>
+            <a class="navbar-link" id="navbar-signin-button" href="./signin.html">Sign In</a>
+          </div>
+        </div>
+      </nav>
+  
+      <div class="header-txt">
+        <h1 class="header-note">
+          <p>Discover Incredible Deals</p>
+          <p>at Our Live Auction!</p>
+          <p>Bid Now and Claim</p>
+          <p>Your Treasure!</p>
+        </h1>
+        <div>
+          <button class="home-buttons" onclick="goToSignInPage()">
+            <a href="./signin.html">Sign In</a>
+          </button>
+          <button class="home-buttons" style="background-color: #ffb606">
+            <a href="./signin.html"> Sign Up</a>
+          </button>
+        </div>
+      </div>
+    </Section>
+   
+    <!--sells item-->
+
+
+    <section>
+      <div class="sellItems-title">
+        <h2>
+          <p>BUY YOUR DREAM SPORTS CAR NOW!</p>
+        </h2>
+      </div>
+  
+      <section class="product-row">
+        <section>
+          <div class="img-cont1">
+            <img src="../assets/images/Car1.png" alt="Product 1" />
+          </div>
+  
+          <div class="txt-cont">
+            <div>
+              <p class="txt"><strong>Brand : </strong>Bugatti Chiron</p>
+              <p class="txt"><strong>Type : </strong>Sport Car</p>
+              <p class="txt"><strong>Last Bidder Price : </strong>4.5 million</p>
+              <p class="txt"><strong>Location : </strong>Addis Ababa</p>
+              <p class="txt"><strong>Deadline : </strong>5 days left</p>
+            </div>
+  
+            <div>
+              <button class="status-button">Live Now!</button>
+            </div>
+          </div>
+  
+          <fieldset class="bid-fieldset">
+            <legend>Place Your Bid</legend>
+            <label for="bid-amount-1">Bid Amount:</label>
+            <input
+              type="number"
+              id="bid-amount-1"
+              name="bid-amount-1"
+              min="100"
+              step="100"
+            />
+            <button
+              type="submit"
+              class="bid-button"
+              onclick="clearFieldset('bid-amount-1')"
+            >
+              Submit Bid
+            </button>
+          </fieldset>
+        </section>
+  
+        <section>
+          <div class="img-cont1">
+            <img src="../assets/images/Car2.jpg" alt="Product 2" />
+          </div>
+  
+          <div class="txt-cont">
+            <div>
+              <p class="txt"><strong>Brand : </strong>Bugatti Chiron</p>
+              <p class="txt"><strong>Type : </strong>Sport Car</p>
+              <p class="txt"><strong>Last Bidder Price : </strong>4 million</p>
+              <p class="txt"><strong>Location : </strong>Addis Ababa</p>
+              <p class="txt"><strong>Deadline : </strong>4 days left</p>
+            </div>
+            <div>
+              <button class="status-button">Live Now!</button>
+            </div>
+          </div>
+  
+          <fieldset class="bid-fieldset">
+            <legend>Place Your Bid</legend>
+            <label for="bid-amount-2">Bid Amount:</label>
+            <input
+              type="number"
+              id="bid-amount-2"
+              name="bid-amount-2"
+              min="100"
+              step="100"
+            />
+            <button
+              type="submit"
+              class="bid-button"
+              onclick="clearFieldset('bid-amount-2')"
+            >
+              Submit Bid
+            </button>
+          </fieldset>
+        </section>
+  
+        <section>
+          <div class="img-cont1">
+            <img src="../assets/images/Car3.jpg" alt="Product 3" />
+          </div>
+  
+          <div class="txt-cont">
+            <div>
+              <p class="txt"><strong>Brand : </strong>Bugatti Chiron</p>
+              <p class="txt"><strong>Type : </strong>Sport Car</p>
+              <p class="txt"><strong>Last Bidder Price : </strong>5 million</p>
+              <p class="txt"><strong>Location : </strong>Addis Ababa</p>
+              <p class="txt"><strong>Deadline : </strong>6 days left</p>
+            </div>
+            <div>
+              <button class="status-button">Live Now!</button>
+            </div>
+          </div>
+  
+          <fieldset class="bid-fieldset">
+            <legend>Place Your Bid</legend>
+            <label for="bid-amount-3">Bid Amount:</label>
+            <input
+              type="number"
+              id="bid-amount-3"
+              name="bid-amount-3"
+              min="100"
+              step="100"
+            />
+            <button
+              type="submit"
+              class="bid-button"
+              onclick="clearFieldset('bid-amount-3')"
+            >
+              Submit Bid
+            </button>
+          </fieldset>
+        </section>
+  
+        <section>
+          <div class="img-cont1">
+            <img src="../assets/images/Car4.jpg" alt="Product 4" />
+          </div>
+  
+          <div class="txt-cont">
+            <div>
+              <p class="txt"><strong>Brand : </strong>Bugatti Chiron</p>
+              <p class="txt"><strong>Type : </strong>Sport Car</p>
+              <p class="txt"><strong>Last Bidder Price : </strong>5.5 million</p>
+              <p class="txt"><strong>Location : </strong>Addis Ababa</p>
+              <p class="txt"><strong>Deadline : </strong>23 hours left</p>
+            </div>
+            <div>
+              <button class="status-button">Live Now!</button>
+            </div>
+          </div>
+  
+          <fieldset class="bid-fieldset">
+            <legend>Place Your Bid</legend>
+            <label for="bid-amount-4">Bid Amount:</label>
+            <input
+              type="number"
+              id="bid-amount-4"
+              name="bid-amount-4"
+              min="100"
+              step="100"
+            />
+            <button
+              type="submit"
+              class="bid-button"
+              onclick="clearFieldset('bid-amount-4')"
+            >
+              Submit Bid
+            </button>
+          </fieldset>
+        </section>
+  
+        <section>
+          <div class="img-cont1">
+            <img src="../assets/images/Car5.jpg" alt="Product 5" />
+          </div>
+  
+          <div class="txt-cont">
+            <div>
+              <p class="txt"><strong>Brand : </strong>Bugatti Chiron</p>
+              <p class="txt"><strong>Type : </strong>Sport Car</p>
+              <p class="txt"><strong>Last Bidder Price : </strong>4 million</p>
+              <p class="txt"><strong>Location : </strong>Addis Ababa</p>
+              <p class="txt"><strong>Deadline : </strong>1 week left</p>
+            </div>
+            <div>
+              <button class="status-button">Live Now!</button>
+            </div>
+          </div>
+  
+          <fieldset class="bid-fieldset">
+            <legend>Place Your Bid</legend>
+            <label for="bid-amount-5">Bid Amount:</label>
+            <input
+              type="number"
+              id="bid-amount-5"
+              name="bid-amount-5"
+              min="100"
+              step="100"
+            />
+            <button
+              type="submit"
+              class="bid-button"
+              onclick="clearFieldset('bid-amount-5')"
+            >
+              Submit Bid
+            </button>
+          </fieldset>
+        </section>
+      </section>
+    </section>
+    
+    <!--our service-->
+    <section>
+      <div class="our-service-header"><h2>Our Services</h2></div>
+      <div class="media-scroller snaps-inline">
+        <div class="media-element">
+          <div class="inner-div">
+            <p>
+              Experience seamless bidding with our user-friendly platform. We’ve simplified the auction process to save you time and maximize your success.
+            </p>
+          </div>
+        </div>
+        <div class="media-element">
+          <div class="inner-div">
+            <p>
+              We prioritize transparency, ensuring every bid is tracked and visible to all participants. With us, you can trust that the auction is fair and secure.
+            </p>
+          </div>
+        </div>
+        <div class="media-element">
+          <div class="inner-div">
+            <p>
+              Discover a diverse selection of products, from electronics to collectibles. Whether buying or selling, our platform caters to all your needs.
+           </p>
+          </div>
+        </div>
+        <div class="media-element">
+          <div class="inner-div">
+            <p>
+              Experience seamless bidding with our user-friendly platform. We’ve simplified the auction process to save you time and maximize your success.
+          </p>
+          </div>
+        </div>
+        <div class="media-element">
+          <div class="inner-div">
+            <p>
+              We prioritize transparency, ensuring every bid is tracked and visible to all participants. With us, you can trust that the auction is fair and secure.
+            </p>
+          </div>
+        </div>
+        <div class="media-element">
+          <div class="inner-div">
+            <p>
+              Discover a diverse selection of products, from electronics to collectibles. Whether buying or selling, our platform caters to all your needs.
+           </p>
+          </div>
+        </div>
+        <div class="media-element">
+          <div class="inner-div">
+            <p>
+              Experience seamless bidding with our user-friendly platform. We’ve simplified the auction process to save you time and maximize your success.
+          </p>
+          </div>
+        </div>
+        <div class="media-element">
+          <div class="inner-div">
+            <p>
+              We prioritize transparency, ensuring every bid is tracked and visible to all participants. With us, you can trust that the auction is fair and secure.
+            </p>
+          </div>
+        </div>
+        <div class="media-element">
+          <div class="inner-div">
+            <p>
+              Discover a diverse selection of products, from electronics to collectibles. Whether buying or selling, our platform caters to all your needs.
+           </p>
+          </div>
+        </div>
+       
+      </div>
+    </section>
+
+    <!--our partner-->
+
+    <section>
+      <div class="sellItems-title">
+        <h2>
+          <p>Trusted by the Best</p>
+        </h2>
+      </div>
+  
+      <section class="company-row">
+        <section>
+          <div class="img-cont1">
+            <img
+              src="../assets/images/Ethiopian-Investment-Commission.jpg"
+              alt="Company Logo"
+            />
+          </div>
+  
+          <div class="txt-cont">
+            <p>Ethiopian Investment Commission</p>
+          </div>
+        </section>
+  
+        <section>
+          <div class="img-cont1">
+            <img src="../assets/images/Ethio-telecom.jpg" alt="Company Logo" />
+          </div>
+  
+          <div class="txt-cont">
+            <p>Ethio telecom</p>
+          </div>
+        </section>
+  
+        <section>
+          <div class="img-cont1">
+            <img src="../assets/images/Commercial-Bank.jpg" alt="Company Logo" />
+          </div>
+  
+          <div class="txt-cont">
+            <p>Commercial Bank of Ethiopia</p>
+          </div>
+        </section>
+      </section>
+    </section>
+
+     <!--footer section-->
+
+     <section>
+      <h1>Give us your valuable feedback</h1>
+      <div class="container">
+        <h2>Your answer</h2>
+        <textarea placeholder="Write your comment here"></textarea>
+        <button type="submit">Submit</button>
+      </div>
+  
+      <footer class="footer" id="footer-id">
+        <div class="footer-company-name">
+          <h2>Golden Auction</h2>
+        </div>
+  
+        <div class="footer-redirect">
+          <h2 class="service-title">Services</h2>
+          <p>Support</p>
+          <p>Bid Process</p>
+          <p>Services</p>
+          <br />
+  
+          <p>© 2024 Golden Auction. All rights reserved.</p>
+          <p>Terms of Service | Privacy Policy</p>
+        </div>
+  
+        <div class="socials">
+          <h2>Social Media</h2>
+          <div class="social-medias">
+              <a
+              href="https://fontawesome.com/icons/telegram?f=brands&s=solid"
+              target="_blank"
+              class="icon"
+              ><i class="fab fa-facebook" style="color: white;"></i
+            ></a>
+            <a
+                href="https://fontawesome.com/icons/telegram?f=brands&s=solid"
+                target="_blank"
+                class="icon"
+              >
+              <i class="fab fa-instagram" style="color: white;"></i >
+            </a>
+            <a
+              href="https://fontawesome.com/icons/telegram?f=brands&s=solid"
+              target="_blank"
+              class="icon"
+              >
+              <i class="fab fa-github" style="color: white;"></i>
+            </a>
+          </div>
+         
+        </div>
+      </footer>
+     </section>
+    <section>
+    </section>
+
+  </body>
+</html>

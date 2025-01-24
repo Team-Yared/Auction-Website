@@ -1,0 +1,64 @@
+@import "https://unpkg.com/open-props";
+
+.media-scroller {
+  --_spacer: var(--size-3);
+  display: grid;
+  gap: var(--_spacer);
+  grid-auto-flow: column;
+  grid-auto-columns: 33.3%;
+
+  padding: 0 var(--_spacer) var(--_spacer);
+
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  
+}
+.inner-div{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  padding: 30px;
+}
+
+.media-element {
+  padding: 30px;
+  display: grid;
+  place-items: center;
+  grid-template-rows: min-content;
+  gap: var(--_spacer);
+  padding: var(--_spacer);
+  background: var(--surface-2);
+  border-radius: var(--radius-2);
+  box-shadow: var(--shadow-2);
+  /* height: 100px; */
+  background-color: rgb(53, 53, 52);
+  min-height: 200px;
+  max-width: 500px;
+  font-size: 20px;
+}
+
+
+.media-element > img {
+  inline-size: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.snaps-inline {
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: var(--_spacer, 1rem);
+}
+
+.snaps-inline > * {
+  scroll-snap-align: start;
+}
+
+/* general styling */
+
+
+.our-service-header{
+  text-align: center;
+  font-size: 25px;
+  color:#f90;
+}

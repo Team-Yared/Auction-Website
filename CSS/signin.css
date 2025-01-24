@@ -1,0 +1,93 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    background-image: url("../assets/images/home-background.jpg");
+  }
+  
+  .auth-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    height: 500px;
+  }
+  
+  .form-header {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-header button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .form-header .active {
+    border-bottom: 2px solid #f90;
+    color: #f90;
+  }
+  
+  .form {
+    display: none;
+    animation: fadeIn 0.3s ease-in-out;
+    margin-top: 1.2rem;
+  }
+  
+  .form.active {
+    display: block;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.8rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  form .btn {
+    width: 100%;
+    padding: 0.8rem;
+    background: #f90;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 3rem;
+
+  }
+  
+  form .btn:hover {
+    background: rgb(205, 130, 17);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
